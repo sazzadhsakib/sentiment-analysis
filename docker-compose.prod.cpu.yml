@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  sentiment-analysis:
+    image: sentiment-analysis-from-text
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    container_name: sentiment-analysis
+    command:
+      [
+        "sh",
+        "-c",
+        "uvicorn src.app:app --host 0.0.0.0 --port 4080"
+      ]
+    environment:
+      NUM_JITTERS: $stagingJitters
+    ports:
+      - 4080:4080
+    expose:
+      - 4080
+
+
