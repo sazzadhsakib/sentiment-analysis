@@ -1,4 +1,31 @@
+# folder
+src/data/
+__pycache__/
+# pyflow
+__pypackages__/
+# testing
+data/
+# Environments
+
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.idea
+.vscode
+# Log files
+pip-log.txt
+pip-delete-this-directory.txt
+*.log
+*.out
 *.csv
-data/*
-models/*
-output/*
+*.json
+*.pkl
+*.bin
+*.txt
+
+src/rnd/models/models--StatsGary--setfit-ft-sentinent-eval/
+src/rnd/models/StatsGary_setfit-ft-sentinent-eval/
+src/rnd/output/1_Pooling/
