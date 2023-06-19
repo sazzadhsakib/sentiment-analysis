@@ -3,7 +3,7 @@ from setfit import SetFitModel
 class SentimentAnalysis:
 
     def __init__(self):
-        self.model = SetFitModel.from_pretrained("/home/sazzad/Documents/sazzad/personal/sentiment-analysis/src/rnd/output", local_files_only=True)
+        self.model = SetFitModel.from_pretrained("src/rnd/models", local_files_only=True)
 
     def map_sentiment_labels(self, sentiment_tensor):
         print(sentiment_tensor)

@@ -1,5 +1,8 @@
 # folder
 src/data/
+src/__pycache__
+src/rnd/__pycache__
+src/rnd/models/
 __pycache__/
 # pyflow
 __pypackages__/
@@ -24,8 +27,5 @@ pip-delete-this-directory.txt
 *.json
 *.pkl
 *.bin
-*.txt
 
-src/rnd/models/models--StatsGary--setfit-ft-sentinent-eval/
-src/rnd/models/StatsGary_setfit-ft-sentinent-eval/
-src/rnd/output/1_Pooling/
+
