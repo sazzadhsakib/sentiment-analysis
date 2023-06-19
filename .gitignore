@@ -2,7 +2,6 @@
 src/data/
 src/__pycache__
 src/rnd/__pycache__
-src/rnd/models/
 __pycache__/
 # pyflow
 __pypackages__/
