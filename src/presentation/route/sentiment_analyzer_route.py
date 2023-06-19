@@ -3,9 +3,9 @@ from src.data.models.detect_sentiment_request_model import DetectSentimentReques
 from src.data.models.detect_sentiment_response_model import DetectSentimentResponseModel
 from src.usecases.detect_sentiment_uc import DetectSentimentUC
 
-router = APIRouter(prefix='/detect')
+router = APIRouter()
 
-@router.post('/detect', response_model=DetectSentimentResponseModel)
+@router.post('/analyze', response_model=DetectSentimentResponseModel)
 async def detectSentiment(
     request: DetectSentimentRequestModel,
 ):
