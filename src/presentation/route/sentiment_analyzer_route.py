@@ -5,11 +5,10 @@ from src.usecases.detect_sentiment_uc import DetectSentimentUC
 
 router = APIRouter()
 
-@router.post('/analyze', response_model=DetectSentimentResponseModel)
+@router.post("/analyze", response_model=DetectSentimentResponseModel)
 async def detectSentiment(
     request: DetectSentimentRequestModel,
 ):
     detectSentimentRequestModel = DetectSentimentRequestModel(text=request.text)
     usecase = DetectSentimentUC()
     return await usecase(detectSentimentRequestModel)
-    

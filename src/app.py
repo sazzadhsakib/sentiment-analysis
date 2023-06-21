@@ -14,6 +14,5 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # Include the router for the sentiment analyzer
 app.include_router(sentiment_analyzer_route.router)

@@ -1,9 +1,10 @@
 from setfit import SetFitModel
 
 class SentimentAnalysis:
-
     def __init__(self):
-        self.model = SetFitModel.from_pretrained("src/rnd/models", local_files_only=True)
+        self.model = SetFitModel.from_pretrained(
+            "src/rnd/models", local_files_only=True
+        )
 
     def map_sentiment_labels(self, sentiment_tensor):
         print(sentiment_tensor)
@@ -11,13 +12,8 @@ class SentimentAnalysis:
         sentiment_label = labels[sentiment_tensor]
         return sentiment_label
 
-
     def get_sentiment_from_text(self, text):
         preds = self.model([text])
         analyzedLabels = self.map_sentiment_labels(preds)
         print(analyzedLabels)
         return analyzedLabels
-
-
-
-
